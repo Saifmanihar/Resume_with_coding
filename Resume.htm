@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume2</title>
+</head>
+<style>
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .Header_frame {
+        display: flex;
+        height: 88.001px;
+        padding-bottom: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+
+    .name_field {
+        align-self: stretch;
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .contact_field {
+        display: flex;
+        width: 357px;
+        padding-right: 0px;
+        align-items: center;
+        gap: 20px;
+        flex: 1 0 0;
+    }
+
+    .Contact {
+        width: 122px;
+        flex-shrink: 0;
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .line1 {
+        width: 1px;
+        height: 16px;
+        background: #000;
+        border: 0.5px solid black;
+    }
+
+    .Email {
+        width: 175px;
+        flex-shrink: 0;
+        color: #0029FF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .line2 {
+        width: 260.002px;
+        height: 1px;
+        background: #000;
+    }
+
+    .line3 {
+        width: 1431px;
+        height: 1px;
+        background: #0029FF;
+    }
+
+    .social_media {
+        display: flex;
+        width: 115px;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+    }
+
+    .social1 {
+        flex: 1 0 0;
+        color: #0029FF;
+        text-align: right;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .social2 {
+        flex: 1 0 0;
+        color: #0029FF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+
+
+    .Education_frame {
+        display: flex;
+        height: 135px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+
+    .Topic {
+        height: 26px;
+        flex-shrink: 0;
+        align-self: stretch;
+        color: #F00;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .college_section {
+        display: flex;
+        padding: 0.5px 0px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .degree_college {
+        flex: 1 0 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .date_time {
+        width: 116px;
+        height: 16px;
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .degree_Details {
+        display: flex;
+        padding: 0.5px 0px;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .course1 {
+        flex: 1 0 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .date_time1 {
+        width: 105px;
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .junior_Details {
+        display: flex;
+        padding: 0.5px 0px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .college_name {
+        flex: 1 0 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .date_time2 {
+        width: 105px;
+        height: 16px;
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .junior_Details1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .Course2 {
+        flex: 1 0 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .date_time3 {
+        width: 107px;
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Relavent_frame {
+        display: flex;
+        height: 137.534px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+
+    .relavent_topic {
+        width: 132px;
+        height: 23px;
+        flex-shrink: 0;
+        color: #F00;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .subject1 {
+        width: 262px;
+        height: 22px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .subject2 {
+        width: 282px;
+        height: 22px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .subject3 {
+        width: 138px;
+        height: 22px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .subject4 {
+        width: 128px;
+        height: 22px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .subject5 {
+        width: 220px;
+        height: 22px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Technical_skills {
+        display: flex;
+        height: 114px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+
+    .technical_topic {
+        width: 118px;
+        color: #F00;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Programming_language {
+        width: 363px;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Web_Technologies {
+        width: 433px;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Frameworks_and_Libraries {
+        width: 382px;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Version_Control_Systems {
+        width: 265px;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Databases {
+        width: 223px;
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .Project_frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 19px;
+        align-self: stretch;
+    }
+
+    .project_parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: stretch;
+    }
+
+    .date1 {
+        width: 131px;
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .project_info {
+        align-self: stretch;
+        color: #F00;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        color: #FF1F1F;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+
+    .span1 {
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .project_description{
+        flex: 1 0 0;
+        color: #F00;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+    }
+    .span2{
+        color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+    }
+    .end_date{
+        width: 131px;
+        color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+    }
+    .Achievement_frame{
+        display: flex;
+height: 145px;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex-shrink: 0;
+align-self: stretch;
+    }
+    .achieve_topic{
+        color: #F00;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: 94px;
+    }
+    .achieve_section1{
+        color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+align-self: stretch;
+line-height: normal;
+    }
+    .achieve_section2{
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .achieve_section3{
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        align-self: stretch;
+    }
+    .achieve_section4{
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        align-self: stretch;
+    }
+    .Hobbies_frame{
+        display: flex;
+height: 61px;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex-shrink: 0;
+align-self: stretch;
+    }
+    .topic_hobbies{
+        width: 64px;
+        height: 17px;
+        flex-shrink: 0;
+        color: #F00;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+    }
+    .hobbies{
+        color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+align-self: stretch;
+    }
+</style>
+
+<body>
+    <div class="grand-parent">
+        <div class="Header_frame">
+            <div class="name_field"> Saif Manihar</div>
+            <div class="contact_field">
+                <div class="Contact"> +91 8433646271 </div>
+                <div class="line1"></div>
+                <div class="Email">Saifmanihar43@gmail.com</div>
+                <div class="line1"></div>
+            </div>
+            <div class="line2"></div>
+            <div class="social_media">
+                <div class="social1">Linkedin</div>
+                <div class="social2">Github</div>
+            </div>
+            <div class="line3"></div>
+        </div>
+        <div class="Education_frame">
+            <div class="Topic">Education:</div>
+            <div class="college_section">
+                <div class="degree_college">Guru Nanak college of arts,science and commerce</div>
+                <div class="date_time">India,Mh, Mumbai</div>
+            </div>
+            <div class="degree_Details">
+                <div class="course1">Graduated from bachelor’s of science in information technology with (94.45GPA)
+                </div>
+                <div class="date_time1">Till SemV 2023</div>
+            </div>
+            <div class="junior_Details">
+                <div class="college_name">Maharashtra College pf arts,science and commerce</div>
+                <div class="date_time2">Mumbai,Byculla</div>
+            </div>
+            <div class="junior_Details1">
+                <div class="Course2">HSC completed from Science background in 2020</div>
+                <div class="date_time3">2018 to 2020</div>
+            </div>
+            <div class="line3"></div>
+        </div>
+        <div class="Relavent_frame">
+            <div class="relavent_topic">Relevant course:</div>
+            <div class="subject1">Object-Oriented Programming(OOP)</div>
+            <div class="subject2">Database Management System (DBMS)</div>
+            <div class="subject3">Web Development</div>
+            <div class="subject4">Operating System</div>
+            <div class="subject5">Data Structure and Algorithms</div>
+            <div class="line3"></div>
+        </div>
+        <div class="Technical_skills">
+            <div class="technical_topic">Technical skills:</div>
+            <div class="Programming_language">Programming Languages: C#,C, Java, Python, C+.</div>
+            <div class="Web_Technologies">Web Technologies: HTML, CSS, JavaScript, Mysql, Mongodb.</div>
+            <div class="Frameworks_and_Libraries">Frameworks and Libraries: Bootstrap, ASP.NET,Jquery</div>
+            <div class="Version_Control_Systems">Version Control Systems: GitHub, Git.</div>
+            <div class="Databases">Databases: MySQL, MongoDB.</div>
+            <div class="line3"></div>
+        </div>
+        <div class="Project_frame">
+            <div class="project_parent">
+                <div class="date1">Start date:5/12/23</div>
+                <div class="project_info">Project: Streamilo - <span class="span1"> Website Feedback and Evaluation
+                        Platform</span></div>
+            </div>
+            <div class="project_description">
+                <div class="describe">Description: <span class="span2"> Streamilo is a web-based platform that allows users to deploy their website links and frontend images for evaluation. It provides valuable insights on the basis of user reactions, reviews, and comments to help improve website design and performance. The platform displays the collected data in a tabular format, allowing users to easily analyze feedback on design, responsiveness, execution, and responsiveness. </span></div>
+            </div>
+            <div class="end_date">End date:5/12/23</div>
+            <div class="line3"></div>
+        </div>
+        <div class="Achievement_frame">
+            <div class="achieve_topic">Achievement:</div>
+            <div class="achieve_section1">Represented college in numerous inter-college events, excelling in both curricular and IT competitions.</div>
+            <div class="achieve_section2">Secured third prize in a web development competition hosted by Universal College.</div>
+            <div class="achieve_section3">Achieved first prize twice in treasure hunt events and second prize in the back bore steel competition.</div>
+            <div class="achieve_section4">Played a key role in organizing and managing IT events at my college.</div>
+            <div class="line3"></div>
+        </div>
+        <div class="Hobbies_frame">
+            <div class="topic_hobbies">Hobbies:</div>
+            <div class="hobbies">Continuous Learning, Embracing New Technologies, Event Participation, Cycling</div>
+        </div>
+    </div>
+</body>
+
+</html>
